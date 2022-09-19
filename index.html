@@ -11,10 +11,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+
+
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
     <title>Document</title>
 </head>
 
 <body>
+    <section class="ninety">
     <header>
         <div class="logo">
             <span><img src="./images/logo 2.png" href="" /></span>
@@ -46,7 +52,93 @@
     </section>
 
 
-    <section class></section>
+    <section class="services">
+        <h1 class="services-heading">
+            What we do?
+        </h1>
+
+        <section class="service-subsection">
+            <div class="subsection-text">
+                <div class="subsection-heading">
+                    Make secure and fast payments using our platform
+                </div>
+                <div class="subsection-body">
+                    Speed up the financial and economic inclusion of your community by saving your customers travel and
+                    queue time while providing access to custom or relevant products that fit their needs.
+                </div>
+            </div>
+            <div class="subsection-img">
+                <img src="./images/fast-payments-img.png" alt="">
+            </div>
+        </section>
+
+        <section class="service-subsection">
+            <div class="subsection-img-alt">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/payment-service-img.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/payment-service-img.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/payment-service-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="subsection-text-alt">
+                <div class="subsection-heading">
+                    Set up that payment service for your business
+                </div>
+                <div class="subsection-body">
+                    Incorporate the desired payment service that your business needs while expanding your service
+                    offerings and improving trust and credibility among your customers.
+                </div>
+            </div>
+        </section>
+    </section>
+</section>
+
+
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <div class="newsletter-text">
+                <div class="newsletter-heading">
+                    Stay Updated Today.
+                </div>
+                <div class="newsletter-body">
+                    Sign up to our Newsletter.
+                </div>
+            </div>
+            <div class="newsletter-input">
+                <form action="" class="buttonIn">
+                    <input type="text" placeholder="Enter Your Email" />
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cards",
+            grabCursor: true,
+        });
+    </script>
 </body>
 
 </html>
