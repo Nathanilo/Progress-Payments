@@ -12,7 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
     <!-- Swiper css -->
     <link
       rel="stylesheet"
@@ -31,9 +35,9 @@
         </div>
         <nav class="nav">
           <ul class="nav-links">
-            <li>Home</li>
-            <li>Services</li>
-            <li>About</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
             <!-- <li><a class="cta" href="#">Contact Us</a></li> -->
           </ul>
           <button class="cta">Contact Us</button>
@@ -77,7 +81,7 @@
         </section>
 
         <section class="service-subsection">
-          <div class="subsection-img-alt">
+          <!-- <div class="subsection-img-alt">
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -91,6 +95,9 @@
                 </div>
               </div>
             </div>
+          </div> -->
+          <div class="subsection-img-alt">
+            <img src="./images/payment-service-img.png" />
           </div>
           <div class="subsection-text-alt">
             <div class="subsection-heading">
@@ -120,16 +127,64 @@
         </div>
       </div>
     </section>
+    <footer>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <ul>
+                <li>
+                  <a href="#"><img src="/images/logo.png" /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Quick links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Our Socials</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+
+            <div class="footer-col">
+              <h4>Reach Us</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    >Plot 1, Odudu Eleyiwo Street, Oniru, Victoria Island,
+                    Lagos, Nigeria.</a
+                  >
+                </li>
+                <li><a href="#">+234 705 393 1881</a></li>
+                <li><a href="#"> +234 805 555 2344</a></li>
+                <li><a href="#">info@progresspayments.ng</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </footer>
 
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
 
     <!-- Initialize Swiper -->
-    <script>
+    <!-- <script>
       var swiper = new Swiper(".mySwiper", {
         effect: "cards",
         grabCursor: true,
       });
-    </script>
+    </script> -->
   </body>
 </html>
