@@ -105,7 +105,7 @@ header {
 /* =======SERVICES======= */
 .services {
   margin: auto auto;
-  width: 80%;
+  width: 90%;
   /* background: blue; */
 }
 
@@ -145,7 +145,7 @@ header {
 }
 
 .subsection-text-alt {
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   /* background-color: red; */
   flex-direction: column;
 }
