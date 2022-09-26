@@ -446,6 +446,16 @@ ul {
     line-height: 36px;
     margin-bottom: 1.5rem;
   }
+
+  /* =======NEWSLETTER======= */
+
+  .newsletter-content {
+    flex-direction: column;
+  }
+
+  .newsletter-input {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
