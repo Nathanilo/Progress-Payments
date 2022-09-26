@@ -98,7 +98,6 @@ header {
 .hero-text,
 .hero-img {
   display: flex;
-  flex: 1;
 }
 
 .hero-text {
@@ -359,7 +358,59 @@ ul {
   background-color: #ffffff;
 }
 
-/*responsive*/
+@media (max-width: 480px) {
+  /* =======HEADER======= */
+
+  header {
+    display: flex;
+    height: 90px;
+    /* margin-bottom: 6em; */
+    /* background-color: yellow; */
+  }
+
+  .logo-text {
+    color: #423ca5;
+    font-size: 0.9rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    margin: 0.6rem auto;
+  }
+
+  .hero-text {
+    flex-direction: column;
+  }
+
+  .hero-heading {
+    font-size: 1.8rem;
+    color: #292566;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-body {
+    font-size: 1.25rem;
+    line-height: 36px;
+    color: #000000;
+    margin-top: 1rem;
+  }
+
+  .hero-img img {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+}
+@media (max-width: 1024px) {
+}
+
+/*=======Responsive Footer====*/
 @media (max-width: 767px) {
   .footer-col {
     width: 50%;
