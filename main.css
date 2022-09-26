@@ -377,6 +377,8 @@ ul {
     display: none;
   }
 
+  /* =======HERO======= */
+
   .hero {
     flex-direction: column;
     margin: 0.6rem auto;
@@ -402,6 +404,47 @@ ul {
   .hero-img img {
     width: 100%;
     margin-top: 2rem;
+  }
+
+  /* =======SERVICES======= */
+  .services {
+    margin: auto auto;
+    width: 90%;
+    /* background: blue; */
+  }
+
+  .services-heading {
+    font-size: 2.5rem;
+    margin: 3rem 0;
+  }
+
+  .service-subsection {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+
+  .subsection-text {
+    justify-content: left;
+    flex-direction: column;
+  }
+
+  .subsection-img img,
+  .subsection-img-alt img {
+    width: 100%;
+  }
+
+  .subsection-heading {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.6em;
+  }
+
+  .subsection-body {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 36px;
+    margin-bottom: 1.5rem;
   }
 }
 
