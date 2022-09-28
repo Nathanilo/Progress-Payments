@@ -359,6 +359,7 @@ ul {
 }
 
 @media (max-width: 1024px) {
+  /* =======HERO======= */
   .hero {
     flex-direction: column;
     text-align: center;
@@ -372,6 +373,8 @@ ul {
   .hero-heading {
     font-size: 3.5rem;
   }
+
+  /* =======SERVICES======= */
 
   .subsection-img img,
   .subsection-img-alt img {
@@ -388,6 +391,48 @@ ul {
 
   .service-subsection {
     align-items: center;
+  }
+
+  /* =======NEWSLETTER======= */
+
+  .newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #423ca5;
+  }
+
+  .newsletter-content {
+    margin: auto auto;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .newsletter-text,
+  .newsletter-input {
+    display: flex;
+    flex: 1;
+  }
+
+  .newsletter-input {
+    justify-content: right;
+  }
+
+  .newsletter-text {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .newsletter-heading {
+    color: #ffffff;
+    font-size: 28px;
+  }
+
+  .newsletter-body {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 40px;
   }
 }
 
