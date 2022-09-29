@@ -248,8 +248,7 @@ nav .nav-links .closeMenu {
 }
 
 .newsletter-input {
-  justify-content: right;
-  /* consider removing */
+  justify-content: center;
 }
 
 .newsletter-text {
@@ -268,10 +267,10 @@ nav .nav-links .closeMenu {
 }
 
 .newsletter-input input {
-  width: 540px;
-  height: 60px;
+  width: 360px;
+  padding-bottom: 0.6rem;
   font-size: 16px;
-  font-family: monospace;
+  letter-spacing: 2px;
   color: #ffffff;
   border: none;
   border-bottom: 1px solid #ffffff;
@@ -281,27 +280,29 @@ nav .nav-links .closeMenu {
 
 .newsletter-input input::placeholder {
   color: #ffffff;
-  font-family: monospace;
+  letter-spacing: 2px;
 }
 
 .newsletter-input .buttonIn {
-  position: relative;
+  display: flex;
+  align-items: flex-end;
 }
 
 .newsletter-input button {
   font-size: 20px;
   font-weight: 600;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  padding: 0 3rem;
-  position: absolute;
-  border: none;
+  padding: 0.8rem 3rem;
+  border: 2px solid #ffffff;
   cursor: pointer;
   color: white;
+  background: none;
+}
+
+.newsletter-input button:hover {
   background-color: #000000;
-
-
+  color: #ffffff;
+  border: 2px solid #000000;
+  transition: background-color 0.4s ease 0s, border 0.4s ease 0s;
 }
 
 /* =======FOOTER======= */
@@ -431,7 +432,7 @@ ul {
   }
 
   .newsletter-input input {
-    width: 400px;
+    width: 200px;
   }
 
   .newsletter-heading {
@@ -456,17 +457,17 @@ ul {
   /* ======= HAMBUREGER ======= */
   nav .nav-links {
     height: 100vh;
-    top: 0px;
-    right: 0px;
-    left: 0px;
+    top: -100%;
+    right: 0;
+    left: 0;
     z-index: 10;
     background: rgb(255, 255, 255);
     position: fixed;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: top 1s ease 0s;
-    display: none;
+    transition: top 0.5s ease 0s;
+    display: hidden;
   }
 
 
@@ -479,6 +480,10 @@ ul {
     font-size: 24px;
     margin-bottom: 2rem;
     text-transform: uppercase;
+  }
+
+  .nav li::after {
+    display: none;
   }
 
   nav .nav-links .closeMenu {
@@ -594,11 +599,15 @@ ul {
 
   .newsletter-text {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
-  .newsletter-input {
-    justify-content: center;
+  .newsletter-input input::placeholder {
+    text-align: center;
+  }
+
+  .newsletter-input button {
+    display: none;
   }
 
   /* ======= FOOTER ======= */
@@ -616,6 +625,10 @@ ul {
     padding: 0.4rem 1.5rem;
   }
 
+  .nav li::after {
+    display: none;
+  }
+
   /* ======= HERO ======= */
   .hero-body,
   .hero-heading {
@@ -629,9 +642,7 @@ ul {
   }
 
   .newsletter-input button {
-    /* padding: 0 1rem;
-    font-size: 1em; */
-    display:none;
+    display: none;
   }
 
   /* ======= FOOTER ======= */
