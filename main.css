@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -21,8 +25,29 @@ body {
 /* =======HEADER======= */
 
 header {
+  width: 100%;
+  z-index: 9999;
+  width: 100%;
+  margin: auto auto;
+}
+
+.header {
   display: flex;
+  background: #ffffff;
   height: 90px;
+  z-index: 9999;
+  padding: 0 4.5rem;
+
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: inherit;
+}
+
+.sticky+.content {
+  padding-top: 102px;
 }
 
 .nav,
@@ -37,6 +62,7 @@ header {
 
 .logo {
   display: flex;
+  text-decoration: none;
 }
 
 .nav {
@@ -182,17 +208,13 @@ nav .nav-links .closeMenu {
   flex: 1;
 }
 
-.subsection-text {
-  justify-content: left;
+.subsection-text, .subsection-text-alt {
+  justify-content: center;
   flex-direction: column;
 }
 
 .subsection-img {
   justify-content: right;
-}
-
-.subsection-text-alt {
-  flex-direction: column;
 }
 
 .subsection-img-alt {
@@ -342,9 +364,15 @@ nav .nav-links .closeMenu {
   letter-spacing: 2px;
   color: #ffffff;
   border: none;
+  border-radius: 0;
   border-bottom: 1px solid #ffffff;
   background: none;
   outline: none;
+
+}
+
+.newsletter-input input[type="text"] {
+  -webkit-appearance: none;
 }
 
 .newsletter-input input::placeholder {
@@ -393,6 +421,7 @@ ul {
 .footer {
   background-color: #24262b;
   padding: 70px 0;
+  z-index: 9999
 }
 
 .footer-col {
@@ -460,6 +489,18 @@ ul {
 .footer-col .social-links a:hover {
   color: #24262b;
   background-color: #ffffff;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 @media (max-width: 1024px) {
@@ -552,7 +593,7 @@ ul {
     transition: background-color 0.6s ease;
   }
 
-  .active,
+  .dot-active,
   .dot:hover {
     background-color: #717171;
   }
@@ -577,10 +618,15 @@ ul {
 @media (max-width: 768px) {
 
   /* =======HEADER======= */
+  .header {
+    padding: 0 2.35rem;
+  }
+
   .logo-text {
     color: #423ca5;
     font-size: 0.9rem;
   }
+
 
   /* ======= HAMBUREGER ======= */
   nav .nav-links {
@@ -751,6 +797,11 @@ ul {
 
 
 @media (max-width: 574px) {
+
+  /* ======= HEADER ======= */
+  .header {
+    padding: 0 1.22rem;
+  }
 
   /* ======= HAMBURGER ======= */
   nav .nav-links .closeMenu {
