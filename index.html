@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <link rel="stylesheet" href="./main.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,34 +14,35 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
   <!-- Swiper css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-
-  <title>Document</title>
+  <title>Progress Payments</title>
 </head>
 
 <body>
+
   <section class="ninety">
     <header>
+
       <div class="logo">
         <span><img src="./images/logo 2.png" href="" /></span>
         <h3 class="logo-text">PROGRESS PAYMENTS</h3>
       </div>
 
       <nav class="nav">
-
         <div class="openMenu"><i class="fa fa-bars"></i></div>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
           <button class="cta">Contact Us</button>
           <div class="closeMenu"><i class="fa fa-times"></i></div>
           <!-- <li><a class="cta" href="#">Contact Us</a></li> -->
         </ul>
       </nav>
+
     </header>
 
     <section class="hero">
-      <div class="hero-text" style="width: 100%">
+      <div class="hero-text">
         <h1 class="hero-heading">Financial Inclusion for All</h1>
         <p class="hero-body">
           Enabling top tier payment solutions for everyone across the economy
@@ -54,9 +54,8 @@
       </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
       <h1 class="services-heading">What we do?</h1>
-
       <section class="service-subsection">
         <div class="subsection-text">
           <div class="subsection-heading">
@@ -121,6 +120,80 @@
     </section>
   </section>
 
+  <section class="about">
+    <h1 class="about-heading">Why Choose Us?</h1>
+    <div class="about-subsection">
+      <div class="about-subsection-text">
+        <i class="fa fa-credit-card"></i>
+        <div class="about-subsection-heading">
+          Fast Transactions
+        </div>
+        <div class="about-subsection-body">
+          Enjoy fast and seamless transactions 24/7 with progress payments.
+        </div>
+      </div>
+      <div class="about-subsection-text">
+        <i class="fa fa-shield-alt"></i>
+        <div class="about-subsection-heading">
+          Security
+        </div>
+        <div class="about-subsection-body">
+          Security and Integrity are our watch words. Be rest assured your business is in
+        </div>
+      </div>
+      <div class="about-subsection-text">
+        <i class="fa fa-credit-card"></i>
+        <div class="about-subsection-heading">
+          Fast Transactions
+        </div>
+        <div class="about-subsection-body">
+          Enjoy fast and seamless transactions 24/7 with progress payments.
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="about-mobile">
+    <h1 class="about-heading">Why Choose Us?</h1>
+    <div class="about-subsection">
+      <div class="about-subsection-text mySlides fade">
+        <i class="fa fa-credit-card"></i>
+        <div class="about-subsection-heading">
+          Fast Transactions
+        </div>
+        <div class="about-subsection-body">
+          Enjoy fast and seamless transactions 24/7 with progress payments.
+        </div>
+      </div>
+      <div class="about-subsection-text mySlides fade">
+        <i class="fa fa-shield-alt"></i>
+        <div class="about-subsection-heading">
+          Security
+        </div>
+        <div class="about-subsection-body">
+          Security and Integrity are our watch words. Be rest assured your business is in
+        </div>
+      </div>
+      <div class="about-subsection-text mySlides fade">
+        <i class="fa fa-credit-card"></i>
+        <div class="about-subsection-heading">
+          Fast Transactions
+        </div>
+        <div class="about-subsection-body">
+          Enjoy fast and seamless transactions 24/7 with progress payments.
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+  </section>
+
   <section class="newsletter">
     <div class="newsletter-content">
       <div class="newsletter-text">
@@ -151,7 +224,7 @@
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">About Us</a></li>
-              <li><a href="#">Our Services</a></li>
+              <li><a href="#services">Our Services</a></li>
               <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
