@@ -12,7 +12,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-  <!-- Swiper css -->
+  <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <title>Progress Payments</title>
 </head>
@@ -75,21 +75,6 @@
       </section>
 
       <section class="service-subsection beta-subsection reveal">
-        <!-- <div class="subsection-img-alt">
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./images/payment-service-img.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/payment-service-img.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/payment-service-img.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div> -->
         <div class="subsection-img-alt">
           <img src="./images/payment-service-img.png" />
         </div>
@@ -153,47 +138,44 @@
         </div>
       </div>
     </div>
-
   </section>
 
   <section class="about-mobile reveal" id="about">
     <h1 class="about-heading reveal">Why Choose Us?</h1>
-    <div class="about-subsection reveal">
-      <div class="about-subsection-text mySlides fade">
-        <i class="fa fa-credit-card"></i>
-        <div class="about-subsection-heading">
-          Fast Transactions
+    <div class="swiper mySwiper reveal">
+      <div class="swiper-wrapper">
+        <div class="about-subsection-text swiper-slide">
+          <i class="fa fa-credit-card"></i>
+          <div class="about-subsection-heading">
+            Fast Transactions
+          </div>
+          <div class="about-subsection-body">
+            Enjoy fast and seamless transactions 24/7 with progress payments.
+          </div>
         </div>
-        <div class="about-subsection-body">
-          Enjoy fast and seamless transactions 24/7 with progress payments.
+        <div class="about-subsection-text swiper-slide">
+          <i class="fa fa-shield-alt"></i>
+          <div class="about-subsection-heading">
+            Security
+          </div>
+          <div class="about-subsection-body">
+            Security and Integrity are our watch words. Be rest assured your business is in
+          </div>
+        </div>
+        <div class="about-subsection-text swiper-slide">
+          <i class="fa fa-credit-card"></i>
+          <div class="about-subsection-heading">
+            Fast Transactions
+          </div>
+          <div class="about-subsection-body">
+            Enjoy fast and seamless transactions 24/7 with progress payments.
+          </div>
         </div>
       </div>
-      <div class="about-subsection-text mySlides fade">
-        <i class="fa fa-shield-alt"></i>
-        <div class="about-subsection-heading">
-          Security
-        </div>
-        <div class="about-subsection-body">
-          Security and Integrity are our watch words. Be rest assured your business is in
-        </div>
-      </div>
-      <div class="about-subsection-text mySlides fade">
-        <i class="fa fa-credit-card"></i>
-        <div class="about-subsection-heading">
-          Fast Transactions
-        </div>
-        <div class="about-subsection-body">
-          Enjoy fast and seamless transactions 24/7 with progress payments.
-        </div>
-      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
-
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
   </section>
 
   <section class="newsletter">
@@ -235,8 +217,8 @@
             <h4>Our Socials</h4>
             <div class="social-links">
               <a href="https://www.facebook.com/profile.php?id=100082677944422"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://www.twitter.com/pyramidsltd"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.linkedin.com/company/pyramids-advisory-limited/"><i
+              <a href="https://twitter.com/ppaymentsltd"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/company/progress-payments-limited"><i
                   class="fab fa-linkedin-in"></i></a>
             </div>
           </div>
@@ -259,19 +241,31 @@
     </footer>
   </footer>
 
-  <!-- Swiper JS -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
 
-  <!-- Initialize Swiper -->
-  <!-- <script>
-      var swiper = new Swiper(".mySwiper", {
-        effect: "cards",
-        grabCursor: true,
-      });
-    </script> -->
 
 
   <script src="./script.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 
 </html>

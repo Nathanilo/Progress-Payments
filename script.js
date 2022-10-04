@@ -22,52 +22,7 @@ function close() {
   mainMenu.style.top = "-150%";
 }
 
-// ABOUT US CAROUSEL
-
-let slideIndex = 1;
-let i;
-let slides = document.getElementsByClassName("mySlides");
-let dots = document.getElementsByClassName("dot");
-let dots2 = document.getElementsByClassName("dot");
-
-
-showSlides(slideIndex);
-showSlide();
-
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-//click dot
-function showSlides(n) {
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" dot-active", "");
-  }
-  slides[slideIndex - 1].style.display = "flex";
-  dots[slideIndex - 1].className += " dot-active";
-}
-
-// AUTO CHANGE ABOUT SECTION TEXT
-function showSlide() {
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  for (i = 0; i < dots2.length; i++) {
-    dots2[i].className = dots2[i].className.replace(" dot-active", "");
-  }
-  slides[slideIndex - 1].style.display = "flex";
-  dots2[slideIndex - 1].className += " dot-active";
-  setTimeout(showSlide, 5000); // Change image every 2 seconds
-}
-
-// REVEAL SECTIONS
+// REVEAL SECTIONS ON SCROLL
 window.addEventListener("scroll", reveal);
 
 function reveal() {
@@ -100,3 +55,5 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+
