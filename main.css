@@ -41,7 +41,6 @@ header {
   height: 90px;
   z-index: 9999;
   padding: 0 4.5rem;
-
 }
 
 .sticky {
@@ -50,7 +49,7 @@ header {
   width: inherit;
 }
 
-.sticky+.content {
+.sticky + .content {
   padding-top: 102px;
 }
 
@@ -195,7 +194,6 @@ nav .nav-links .closeMenu {
   margin-bottom: 2em;
   color: #292566;
   text-align: center;
-
 }
 
 .service-subsection {
@@ -398,7 +396,6 @@ nav .nav-links .closeMenu {
   border-bottom: 1px solid #ffffff;
   background: none;
   outline: none;
-
 }
 
 .newsletter-input input[type="text"] {
@@ -451,7 +448,7 @@ ul {
 .footer {
   background-color: #24262b;
   padding: 70px 0;
-  z-index: 9999
+  z-index: 9999;
 }
 
 .footer-col {
@@ -479,7 +476,7 @@ ul {
   width: 50px;
 }
 
-.footer-col>ul img {
+.footer-col > ul img {
   width: 200px;
 }
 
@@ -534,7 +531,6 @@ ul {
 }
 
 @media (max-width: 1024px) {
-
   /* =======HERO======= */
   .hero {
     flex-direction: column;
@@ -592,7 +588,6 @@ ul {
 }
 
 @media (max-width: 813px) {
-
   /* ======= ABOUT ======= */
   .about {
     display: none;
@@ -607,15 +602,11 @@ ul {
   }
 
   .about-subsection-text {
-
     width: 60%;
   }
-
-
 }
 
 @media (max-width: 768px) {
-
   /* =======HEADER======= */
   .header {
     padding: 0 2.35rem;
@@ -625,7 +616,6 @@ ul {
     color: #423ca5;
     font-size: 0.9rem;
   }
-
 
   /* ======= HAMBUREGER ======= */
   nav .nav-links {
@@ -642,7 +632,6 @@ ul {
     transition: top 0.5s ease 0s;
     display: hidden;
   }
-
 
   .nav li {
     padding-right: 0;
@@ -682,7 +671,6 @@ ul {
     padding: 1.6rem;
     font-size: 20px;
   }
-
 
   /* =======HERO======= */
   .hero {
@@ -794,9 +782,7 @@ ul {
   }
 }
 
-
 @media (max-width: 574px) {
-
   /* ======= HEADER ======= */
   .header {
     padding: 0 1.22rem;
