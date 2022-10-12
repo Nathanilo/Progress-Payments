@@ -181,8 +181,14 @@
           <div class="newsletter-body">Sign up to our Newsletter.</div>
         </div>
         <div class="newsletter-input">
-          <form action="" class="buttonIn">
-            <input type="text" placeholder="Enter Your Email" />
+          <form onsubmit="sendEmail(); reset(); return false;" class="buttonIn">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Your Email"
+              required
+            />
             <button type="submit">Submit</button>
           </form>
         </div>
@@ -270,6 +276,19 @@
           prevEl: ".swiper-button-prev",
         },
       });
+    </script>
+    <!-- Sending form data to email -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "nathanaelodion@gmail.com",
+        Password: "60793EE75C93CAA75B9D5DE7181B347ED5B3",
+        To: "nathanielodion@gmail.com",
+        From: document.getElementById(email).value,
+        Subject: "Add to mailing list",
+        Body: document.getElementById(email).value,
+      }).then((message) => alert("subscribed to mailing list"));
     </script>
   </body>
 </html>
