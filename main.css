@@ -288,6 +288,7 @@ nav .nav-links .closeMenu {
   text-align: center;
   padding-bottom: 2rem;
   font-size: 2rem;
+  margin-top: 2rem;
 }
 
 .about-subsection {
@@ -302,6 +303,7 @@ nav .nav-links .closeMenu {
   justify-items: flex-start;
   align-items: center;
   width: 30%;
+  height: 376px;
   padding: 2rem;
 }
 
