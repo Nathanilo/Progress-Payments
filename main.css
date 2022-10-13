@@ -623,6 +623,8 @@ ul {
   font-size: 1rem;
   font-weight: 600;
   border-radius: 4px;
+  -webkit-appearance: none;
+
 }
 
 .contact-frm input[type="submit"]:hover {
@@ -705,10 +707,10 @@ ul {
     font-size: 32px;
   }
 
-    /* ======= CONTACT-FORM ======= */
-    .contact-content {
-      width: 80%;
-    }
+  /* ======= CONTACT-FORM ======= */
+  .contact-content {
+    width: 80%;
+  }
 }
 
 @media (max-width: 813px) {
@@ -739,6 +741,7 @@ ul {
   .contact-frm {
     padding: 4rem 1rem;
   }
+
   .contact-content .title {
     padding: 4rem 1rem 0;
     font-size: 1.6rem;
@@ -982,10 +985,10 @@ ul {
     width: 100%;
   }
 
-    /* ======= CONTACT-FORM ======= */
-    .contact-content {
-      margin: 20% auto;
-    }
-  
+  /* ======= CONTACT-FORM ======= */
+  .contact-content {
+    margin: 20% auto;
+  }
+
 
 }
