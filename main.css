@@ -186,6 +186,7 @@ nav .nav-links .closeMenu {
 .services {
   width: 90%;
   margin: auto auto;
+  padding-top: 100px;
 }
 
 .services-heading {
@@ -342,6 +343,10 @@ nav .nav-links .closeMenu {
 .about-mobile {
   display: none;
   width: 100%;
+}
+
+.nav .nav-links .about-mobile-link{
+  display: none;
 }
 
 /* =======NEWSLETTER======= */
@@ -716,8 +721,12 @@ ul {
 @media (max-width: 813px) {
 
   /* ======= ABOUT ======= */
-  .about {
+  .about,  .nav .nav-links .about-link {
     display: none;
+  }
+
+  .nav .nav-links .about-mobile-link{
+    display: block;
   }
 
   .about-mobile {
@@ -869,9 +878,8 @@ ul {
   }
 
   /* =======SERVICES======= */
-  .services {
-    margin: auto auto;
-    width: 90%;
+  .services { 
+    padding-top: 50px;
   }
 
   .services-heading {
