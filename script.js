@@ -66,6 +66,7 @@ var modal = document.getElementById("contact-form");
 
 // Get the button that opens the modal
 var btn = document.getElementById("contact-btn");
+var btn2 = document.getElementById("footer-contact-btn");
 
 let contactName = document.getElementById("contact-name");
 let contactEmail = document.getElementById("contact-email");
@@ -78,6 +79,10 @@ var span = document.getElementsByClassName("closeForm")[0];
 btn.onclick = function () {
   modal.style.display = "block";
 };
+
+btn2.onclick = function () {
+    modal.style.display = "block";
+  };
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
