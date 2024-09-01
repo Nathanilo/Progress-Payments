@@ -50,7 +50,7 @@ header {
   width: inherit;
 }
 
-.sticky+.content {
+.sticky + .content {
   padding-top: 102px;
 }
 
@@ -243,6 +243,10 @@ nav .nav-links .closeMenu {
   width: 90%;
   height: 340px;
   padding: 0 1rem;
+}
+
+div .swiper-slide {
+  display: flex;
 }
 
 .swiper-slide {
@@ -485,7 +489,7 @@ ul {
   width: 50px;
 }
 
-.footer-col>ul img {
+.footer-col > ul img {
   width: 200px;
 }
 
@@ -539,7 +543,6 @@ ul {
   opacity: 1;
 }
 
-
 /* ======= CONTACT FORM ======= */
 
 .contact-form {
@@ -583,7 +586,7 @@ ul {
   background: rgb(66, 60, 165, 0.12);
   border: none;
   border-radius: 2px;
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   font-size: 1rem;
 }
 
@@ -605,7 +608,7 @@ ul {
   border-radius: 4px;
   margin-bottom: 3rem;
   resize: none;
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   font-size: 1rem;
 }
 
@@ -631,7 +634,6 @@ ul {
   font-weight: 600;
   border-radius: 4px;
   -webkit-appearance: none;
-
 }
 
 .contact-frm input[type="submit"]:hover {
@@ -655,10 +657,7 @@ ul {
   cursor: pointer;
 }
 
-
-
 @media (max-width: 1024px) {
-
   /* =======HERO======= */
   .hero {
     flex-direction: column;
@@ -721,7 +720,6 @@ ul {
 }
 
 @media (max-width: 813px) {
-
   /* ======= ABOUT ======= */
   .about,
   .nav .nav-links .about-link,
@@ -777,11 +775,9 @@ ul {
   .contact-frm input[type="submit"] {
     width: 50%;
   }
-
 }
 
 @media (max-width: 768px) {
-
   /* =======HEADER======= */
   .header {
     padding: 0 2.35rem;
@@ -957,7 +953,6 @@ ul {
 }
 
 @media (max-width: 574px) {
-
   /* ======= HEADER ======= */
   .header {
     padding: 0 1.22rem;
@@ -1002,6 +997,4 @@ ul {
   .contact-content {
     margin: 20% auto;
   }
-
-
 }
